@@ -42,7 +42,7 @@ const store = MongoStore.create ({
 });
 
 store.on("error", () => {
-    console.log("ERROR in MONGO SESSION STORE",err);
+    console.log("ERROR in MONGO SESSION STORE");
 });
 
 const sessionOptions = {
@@ -118,11 +118,9 @@ app.use((req, res, next) => {
  
 
 
-const port = 8080;
 
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wonderlust";
-
-const dbUrl = process.env.ATLASDB_URL;
+const port = process.env.PORT || 8080;
 
 main().then(() => {
     console.log("Connected to MongoDB");
