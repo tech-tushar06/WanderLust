@@ -1,0 +1,133 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 5 rem;
+    background-color: #f8f9fa;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+nav-link {
+    color: black !important;
+    font-size: 1.2rem !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover {
+    color: #fe424d;
+    text-decoration: underline;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #f8f9fa;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.f-info-links, .f-info-socials, .f-info-copyright {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i{
+    color:#222222;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+
+}
+
+/* Cards */
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0.5rem !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-text p{
+    font-weight: 500 !important;
+}
+
+/* Card Effect */
+
+.listing-card .card-img-overlay {
+    opacity: 0;
+}
+
+.listing-card .card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+.add-btn, .edit-btn {
+    background-color: #fe424d;
+    border: none;
+}
+
+/* Show Page */
+
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.edit-btn {
+    background-color: red !important ;
+}
+
+.show-card{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Edit form image preview */
+.edit-preview {
+    max-height: 10vh;
+    max-width: 10vh;
+    /* display: block; */
+    margin: 0 auto 1rem auto;
+    object-fit: contain;
+}
+
+/* map */
+
+#map {
+    height: 400px;
+    width: 80vh;
+}
