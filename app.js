@@ -20,7 +20,7 @@ const userRoutes = require("./routes/user.js");
 
 
 const session = require("express-session");
-const MongoStore = require('connect-mongo');
+const MongoStore = require('connect-mongo').default;
 
 
 app.engine('ejs', ejsMate);
